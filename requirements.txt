@@ -1,6 +1,7 @@
-Numpy
-Pandas
-Matplotlib
-Scikit-learn
-Jupyter Notebook
-VS Code
+numpy
+pandas
+matplotlib
+scikit-learn
+streamlit
+jupyter notebook
+
