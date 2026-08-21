@@ -7,14 +7,11 @@ A Machine Learning project that predicts property prices using **Simple Linear R
 ## 🚀 Live Demos
 
 ### 📌 Simple Linear Regression
-🔗 **[Live Demo](YOUR_SIMPLE_LINEAR_REGRESSION_LINK)**
+🔗 **[Live Demo](https://property-price-prediction-slr.streamlit.app/)**
 
-> Replace `YOUR_SIMPLE_LINEAR_REGRESSION_LINK` with your Streamlit app URL.
 
 ### 📌 Multiple Linear Regression
-🔗 **[Live Demo](YOUR_MULTIPLE_LINEAR_REGRESSION_LINK)**
-
-> Replace `YOUR_MULTIPLE_LINEAR_REGRESSION_LINK` with your Streamlit app URL.
+🔗 **[Live Demo](https://property-price-prediction-mlr.streamlit.app/)**
 
 ---
 
