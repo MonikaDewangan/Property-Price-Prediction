@@ -1,6 +1,20 @@
 # 🏠 Property Price Prediction using Linear Regression
 
-A Machine Learning project that predicts property prices using **Simple Linear Regression** and **Multiple Linear Regression**. This project demonstrates the complete workflow of building, training, evaluating, and interpreting linear regression models using Python and Scikit-learn.
+A Machine Learning project that predicts property prices using **Simple Linear Regression** and **Multiple Linear Regression**. This project demonstrates the workflow of building, training, evaluating, and interpreting linear regression models using Python and Scikit-learn.
+
+---
+
+## 🚀 Live Demos
+
+### 📌 Simple Linear Regression
+🔗 **[Live Demo](YOUR_SIMPLE_LINEAR_REGRESSION_LINK)**
+
+> Replace `YOUR_SIMPLE_LINEAR_REGRESSION_LINK` with your Streamlit app URL.
+
+### 📌 Multiple Linear Regression
+🔗 **[Live Demo](YOUR_MULTIPLE_LINEAR_REGRESSION_LINK)**
+
+> Replace `YOUR_MULTIPLE_LINEAR_REGRESSION_LINK` with your Streamlit app URL.
 
 ---
 
@@ -8,21 +22,64 @@ A Machine Learning project that predicts property prices using **Simple Linear R
 
 This project includes two regression models:
 
-- ✅ Simple Linear Regression
-- ✅ Multiple Linear Regression
+- ✅ **Simple Linear Regression**
+- ✅ **Multiple Linear Regression**
 
-The models are trained on a housing dataset to predict property prices based on different housing features.
+Both models use the same housing dataset and predict **Price**, but they use different numbers of input features.
+
+---
+
+## 🤖 Models
+
+### 1. Simple Linear Regression
+
+Simple Linear Regression predicts the target variable using **one feature**.
+
+**Target Variable:**
+- `Price` — House/property price
+
+**Feature:**
+- `MedInc` — Median income
+
+```text
+Price = β₀ + β₁(MedInc)
+```
+
+The model learns how the median income of an area is related to property prices.
+
+### 2. Multiple Linear Regression
+
+Multiple Linear Regression predicts the target variable using **multiple features**.
+
+**Target Variable:**
+- `Price` — House/property price
+
+**Features:**
+- `MedInc` — Median income
+- `HouseAge` — Age of the house
+- `AveRooms` — Average number of rooms
+- `AveOccup` — Average occupancy
+- `Latitude` — Latitude of the property
+- `Longitude` — Longitude of the property
+
+```text
+Price = β₀ + β₁(MedInc) + β₂(HouseAge) + β₃(AveRooms)
+        + β₄(AveOccup) + β₅(Latitude) + β₆(Longitude)
+```
+
+Using multiple features allows the model to consider different property and location characteristics when predicting the price.
 
 ---
 
 ## 📂 Project Structure
 
-```
+```text
 Project-Property-Price-Prediction/
 │
 ├── housing_data.csv
 ├── simple_lr.ipynb
 ├── multiple_lr.ipynb
+├── app.py
 ├── README.md
 └── requirements.txt
 ```
@@ -33,36 +90,38 @@ Project-Property-Price-Prediction/
 
 | Feature | Description |
 |---------|-------------|
-| MedInc | Median income |
-| HouseAge | Age of the house |
-| AveRooms | Average number of rooms |
-| AveOccup | Average occupancy |
-| Latitude | Latitude of the property |
-| Longitude | Longitude of the property |
-| Price | Target variable (House Price) |
+| `MedInc` | Median income |
+| `HouseAge` | Age of the house |
+| `AveRooms` | Average number of rooms |
+| `AveOccup` | Average occupancy |
+| `Latitude` | Latitude of the property |
+| `Longitude` | Longitude of the property |
+| `Price` | Target variable (House Price) |
 
 ---
 
 ## 🚀 Project Workflow
 
 ### Simple Linear Regression
+
 - Import required libraries
 - Load and explore the dataset
-- Data visualization
-- Train-Test Split
+- Visualize the relationship between `MedInc` and `Price`
+- Perform Train-Test Split
 - Train Simple Linear Regression model
 - Predict house prices
-- Evaluate model using MSE and R² Score
+- Evaluate the model using MSE and R² Score
 - Predict price for new input
 
 ### Multiple Linear Regression
+
 - Import required libraries
 - Load and explore the dataset
-- Feature selection
-- Train-Test Split
+- Select multiple features
+- Perform Train-Test Split
 - Train Multiple Linear Regression model
 - Predict house prices
-- Evaluate model using MSE and R² Score
+- Evaluate the model using MSE and R² Score
 - Display feature coefficients
 - Predict price for new input
 
@@ -72,8 +131,26 @@ Project-Property-Price-Prediction/
 
 The models are evaluated using:
 
-- Mean Squared Error (MSE)
-- R² Score
+- **Mean Squared Error (MSE)** — Measures the average squared difference between actual and predicted prices.
+- **R² Score** — Measures how well the model explains the variation in the target variable.
+
+---
+
+## 🌐 Streamlit Demo
+
+The Streamlit applications provide an interactive way to test both regression models.
+
+### Simple Linear Regression Demo
+
+**Input Feature:** `MedInc` (Median income)
+
+**Target Variable:** `Price` (Property price)
+
+### Multiple Linear Regression Demo
+
+**Input Features:** `MedInc`, `HouseAge`, `AveRooms`, `AveOccup`, `Latitude`, `Longitude`
+
+**Target Variable:** `Price` (Property price)
 
 ---
 
@@ -84,6 +161,7 @@ The models are evaluated using:
 - NumPy
 - Matplotlib
 - Scikit-learn
+- Streamlit
 - Jupyter Notebook
 - VS Code
 - Git & GitHub
@@ -92,19 +170,29 @@ The models are evaluated using:
 
 ## ▶️ How to Run
 
-1. Clone the repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/MonikaDewangan/Property-Price-Prediction-LinearRegression.git
 ```
 
-2. Install the required libraries
+### 2. Navigate to the project directory
+
+```bash
+cd Property-Price-Prediction-LinearRegression
+```
+
+### 3. Install the required libraries
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Open the notebooks in VS Code or Jupyter Notebook and run all cells.
+### 4. Run the Streamlit application
+
+```bash
+streamlit run app.py
+```
 
 ---
 
@@ -115,6 +203,7 @@ pip install -r requirements.txt
 - Random Forest Regression
 - Feature Engineering
 - Hyperparameter Tuning
+- Model comparison and visualization
 
 ---
 
